@@ -22,21 +22,15 @@ Target Variable: CDR (Clinical Dementia Rating)
 
 Features Used:
 
-Age
+*   Age
+*   Education (Educ)
+*   Socioeconomic Status (SES)
+*   Mini-Mental State Examination Score (MMSE)
+*   Estimated Total Intracranial Volume (eTIV)
+*   Normalized Whole Brain Volume (nWBV)
+*   Atlas Scaling Factor (ASF)
+*   Gender (M/F)
 
-Education (Educ)
-
-Socioeconomic Status (SES)
-
-Mini-Mental State Examination Score (MMSE)
-
-Estimated Total Intracranial Volume (eTIV)
-
-Normalized Whole Brain Volume (nWBV)
-
-Atlas Scaling Factor (ASF)
-
-Gender (M/F)
 
 
 # ⚙️ Requirements
