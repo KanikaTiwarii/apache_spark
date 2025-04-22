@@ -7,11 +7,14 @@ This project aims to predict Alzheimer's disease using clinical data from the **
 
 ## 📂 Project Structure
 
-├── alzheimers_prediction.py # Main PySpark script for model training ├── oasis_cross-sectional.csv # Input dataset used for training ├── classification-models-for-dementia... # Jupyter notebook for classification comparisons ├── archive.zip # Original dataset archive ├── oasis_longitudinal.csv # Additional dataset (not used in current script) └── alzheimers_rf_model/ # Saved Spark ML model
-
-Copy
-Edit
-
+```python
+├── alzheimers_prediction.py                # Main PySpark script for model training
+├── oasis_cross-sectional.csv              # Input dataset used for training
+├── classification-models-for-dementia...  # Jupyter notebook for classification comparisons
+├── archive.zip                             # Original dataset archive
+├── oasis_longitudinal.csv                 # Additional dataset (not used in current script)
+└── alzheimers_rf_model/                   # Saved Spark ML model
+```
 ```bash
 pip install pyspark
 ```
