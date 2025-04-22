@@ -2,6 +2,7 @@
 
 🧠 Alzheimer's Prediction using Apache Spark
 This project aims to predict Alzheimer's disease using clinical data from the OASIS (Open Access Series of Imaging Studies) dataset. The machine learning pipeline is implemented in PySpark using the Random Forest Classifier, making it scalable and suitable for large datasets.
+<pre> ```bash pip install pyspark ``` </pre>
 
 📂 Project Structure
 python
