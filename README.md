@@ -15,9 +15,92 @@ This project aims to predict Alzheimer's disease using clinical data from the **
 ├── oasis_longitudinal.csv                 # Additional dataset (not used in current script)
 └── alzheimers_rf_model/                   # Saved Spark ML model
 ```
+#🧪 Dataset Description
+Source: OASIS-1 Cross-Sectional Dataset
+
+Target Variable: CDR (Clinical Dementia Rating)
+
+Features Used:
+
+Age
+
+Education (Educ)
+
+Socioeconomic Status (SES)
+
+Mini-Mental State Examination Score (MMSE)
+
+Estimated Total Intracranial Volume (eTIV)
+
+Normalized Whole Brain Volume (nWBV)
+
+Atlas Scaling Factor (ASF)
+
+Gender (M/F)
+
+
+#⚙️ Requirements
+Python 3.x
+
+Apache Spark & PySpark
+
+Java 11+ (Ensure JAVA_HOME is set correctly)
+
+Dataset file: oasis_cross-sectional.csv
+
+#🚀 How to Run
+##Install PySpark:
+
 ```bash
 pip install pyspark
 ```
+##Set Environment Variables (Windows Example):
+
+```bash
+set JAVA_HOME="C:\Program Files\Java\jdk-11.0.26+4"
+set HADOOP_HOME="C:\winutils"
+```
+
+##Run the Script:
+```bash
+python alzheimers_prediction.py
+```
+
+##Output:
+Model accuracy printed in the terminal
+
+Model saved to alzheimers_rf_model/
+
+Predictions saved to alzheimers_predictions/
+
+#📊 Evaluation
+Model: Random Forest Classifier (100 trees)
+
+Metric: Accuracy (Multiclass Classification)
+
+Label Mapping (simplified from CDR values):
+
+0.0 → 0 (No Dementia)
+
+0.5 → 0 (Mild Dementia grouped)
+
+1.0+ → 1 (Probable Dementia)
+)
+
+#📘 Notes
+Missing values are dropped during preprocessing.
+
+Gender column is converted to numeric using StringIndexer.
+
+The notebook classification-models-for-dementia... can be used to compare different classifiers.
+
+#📌 Future Work
+Extend to use oasis_longitudinal.csv for temporal predictions
+
+Use multiclass classification for more granularity
+
+Add visualization for feature importance and confusion matrix
+
 
 
 
