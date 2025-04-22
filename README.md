@@ -17,7 +17,7 @@ This project aims to predict Alzheimer's disease using clinical data from the **
 ```
 
 
-#🧪 Dataset Description
+# 🧪 Dataset Description
 - **Source:** OASIS-1 Cross-Sectional Dataset
 - **Target Variable:** CDR (Clinical Dementia Rating)
 - **Features Used:**
@@ -66,7 +66,7 @@ Model saved to alzheimers_rf_model/
 
 Predictions saved to alzheimers_predictions/
 
-#📊 Evaluation
+# 📊 Evaluation
 - **Model:** Random Forest Classifier (100 trees)
 - **Metric:** Accuracy (Multiclass Classification)
 - **Label Mapping (simplified from CDR values):**
@@ -74,12 +74,12 @@ Predictions saved to alzheimers_predictions/
   - 0.5 → 0 (Mild Dementia grouped)
   - 1.0+ → 1 (Probable Dementia)
 
-#📘 Notes
+# 📘 Notes
 - Missing values are dropped during preprocessing.
 - The `Gender` column is converted to numeric using `StringIndexer`.
 - The notebook `classification-models-for-dementia...` can be used to compare different classifiers.
 
-#📌 Future Work
+# 📌 Future Work
 - Extend to use `oasis_longitudinal.csv` for temporal predictions
 - Use multiclass classification for more granularity
 - Add visualization for feature importance and confusion matrix
