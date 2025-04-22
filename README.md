@@ -12,5 +12,10 @@ This project aims to predict Alzheimer's disease using clinical data from the **
 Copy
 Edit
 
+```bash
+pip install pyspark
+```
+
+
 
 
